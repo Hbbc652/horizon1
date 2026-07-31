@@ -1,10 +1,18 @@
-// Horizon 1 PWA Service Worker v2
-const CACHE = 'horizon1-v2';
+// Horizon 1 PWA Service Worker v3
+const CACHE = 'horizon1-v3';
 
 // Cache app shell + CDN scripts on install
 const PRECACHE = [
   '/',
   '/index.html',
+  '/manifest.json',
+  '/icons/icon-16.png',
+  '/icons/icon-32.png',
+  '/icons/icon-180.png',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+  '/icons/icon-192-maskable.png',
+  '/icons/icon-512-maskable.png',
   'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/firebase/10.12.0/firebase-app-compat.min.js',
